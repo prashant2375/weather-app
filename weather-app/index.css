@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=1400&q=80'); /* default sunny */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  transition: background-image 0.6s;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 17px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 18px;
+  border-bottom: 3px solid #65b1fc;
+  color: #222;
+  font-size: 22px;
+  font-weight: 400;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  transition: background 0.2s;
+}
+
+header input:focus {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 26px 25px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.app-card {
+  background: rgba(255,255,255,0.17);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.09);
+  border-radius: 24px;
+  padding: 28px 25px 21px;
+  margin-top: 12px;
+  width: 320px;
+  max-width: 97vw;
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+}
+
+.location .city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.location .date {
+  color: #d0e7fa;
+  font-size: 15px;
+}
+
+.current {
+  margin-bottom: 10px;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 82px;
+  font-weight: 900;
+  margin: 5px 0px;
+  text-shadow: 3px 10px rgba(0, 0, 0, 0.11);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.22);
+}
+
+.current .hi-low {
+  color: #e2f2fa;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.13);
+}
+
+.icon-wrap {
+  margin: 8px 0 3px 0;
+}
+
+.current-time,
+.wind-speed,
+.humidity,
+.air-speed,
+.pressure {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.app-card, .app-wrap {
+  transition: box-shadow 0.3s, backdrop-filter 0.3s;
+}
